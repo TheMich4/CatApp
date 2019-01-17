@@ -13,16 +13,32 @@
     </head>
 
     <body>
-        <center>
-            <a href="photo.html">
-                <button id="yesButton">YES</button>
-            </a>
-            <a href="photo.html">
-                <button id="noButton">NO</button>
-            </a>
-            <button id="but">BUTTON3</button>
-            <button id="but">BUTTON4</button>
-            </center>
+
+		<main>
+
+            <div id="menu">
+                <center>
+                    <button id="yesButton" onclick="yes()">YES</button>
+                    <button id="noButton" onclick="no()">NO</button>
+                    <button id="but">BUTTON3</button>
+                    <button id="but">BUTTON4</button>
+                </center>
+            </div>
+
+            <div id="camera">
+                <canvas id="camera--sensor"></canvas>
+
+                <video id="camera--view" autoplay playsinline></video>
+                
+                <img src="//:0" alt="" id="camera--output">
+
+                <button id="camera--trigger">Take a picture</button>
+            </div>
+
+        </main>
+    
+        <script src="app.js"></script> 
+
     </body>
 
 </html>

@@ -4,9 +4,6 @@ const   cameraView = document.querySelector("#camera--view"),
         cameraOutput = document.querySelector("#camera--output"),
         cameraSensor = document.querySelector("#camera--sensor"),
         cameraTrigger = document.querySelector("#camera--trigger"),
-        yesButton = document.querySelector("#yesButton"),
-        menuButtons = document.querySelector("#menuButtons"),
-        buttons = document.querySelector("#buttons"),
         camera = document.querySelector("#camera")
 
 function cameraStart() {
@@ -29,15 +26,17 @@ cameraTrigger.onclick = function() {
     cameraOutput.classList.add("taken");
 }
 
-yesButton.onclick = function() {
-    menuButtons.visibility = "hidden";
-    camera.visibility = "visible";
+function visibility() {
+    document.getElementById("menu").style.visibility = "hidden";
+    document.getElementById("camera").style.visibility = "visible";
+}
 
+function yes() {
+    visibility();
+}
+
+function no() {
+    visibility();
 }
 
 window.addEventListener("load", cameraStart, false);
-
-buttons.onclick() {
-    buttons.visibility = "hidden";
-    camera.visibility = "visible";
-}

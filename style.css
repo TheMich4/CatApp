@@ -3,6 +3,7 @@ head, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: yellow;
 }
 
 #but, #yesButton, #noButton {
@@ -15,7 +16,7 @@ head, body {
     margin: 2px;
 }
 
-#but, #buttons {
+#but{
     background-color: blue;
 }
 
@@ -27,12 +28,15 @@ head, body {
     background-color: red;
 }
 
+#camera {
+    visibility: hidden;
+}
+
 #camera, #camera--view, #camera--sensor, #camera--output {
     position: fixed;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    visibility: hidden;
 }
 
 #camera--trigger {
