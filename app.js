@@ -19,6 +19,7 @@ function cameraStart() {
 }
 
 cameraTrigger.onclick = function() {
+    cameraSensor.facingMode = 'enviroment';
     cameraSensor.width = cameraView.videoWidth;
     cameraSensor.height = cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
