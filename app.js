@@ -4,7 +4,8 @@ const   cameraView = document.querySelector("#camera--view"),
         cameraOutput = document.querySelector("#camera--output"),
         cameraSensor = document.querySelector("#camera--sensor"),
         cameraTrigger = document.querySelector("#camera--trigger"),
-        result = document.querySelector("result")
+        buttons = document.querySelector("#buttons"),
+        camera = document.querySelector("#camera")
 
 function cameraStart() {
     navigator.mediaDevices
@@ -27,3 +28,8 @@ cameraTrigger.onclick = function() {
 }
 
 window.addEventListener("load", cameraStart, false);
+
+buttons.onclick() {
+    buttons.visibility = "hidden";
+    camera.visibility = "visible";
+}
