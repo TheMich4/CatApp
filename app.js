@@ -28,6 +28,9 @@ cameraTrigger.onclick = function() {
 
 function visibility() {
     document.getElementById("menu").style.visibility = "hidden";
+    document.getElementById("menu").style.display = "none";
+
+
     document.getElementById("camera").style.visibility = "visible";
 }
 
