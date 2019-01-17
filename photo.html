@@ -14,16 +14,22 @@
 
     <body>
 
-		<main id="camera">
+		<main>
 
-            <canvas id="camera--sensor"></canvas>
+            <div id="camera">
+                <canvas id="camera--sensor"></canvas>
 
-            <video id="camera--view" autoplay playsinline></video>
-            
-            <img src="//:0" alt="" id="camera--output">
+                <video id="camera--view" autoplay playsinline></video>
+                
+                <img src="//:0" alt="" id="camera--output">
 
-            <button id="camera--trigger">Take a picture</button>
+                <button id="camera--trigger">Take a picture</button>
+            </div>
     
+            <div id="menuButtons">
+                <button id="yesButton">YES BUTTON</button>
+            </div>
+
         </main>
     
         <script src="app.js"></script> 
