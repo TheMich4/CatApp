@@ -15,7 +15,7 @@ head, body {
     margin: 2px;
 }
 
-#but {
+#but, #buttons {
     background-color: blue;
 }
 
