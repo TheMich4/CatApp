@@ -50,6 +50,11 @@ cameraTrigger.onclick = function() {
         var audio = new Audio("cat.mp3");
         audio.play();
     }
+        
+        if (cat == false) {
+        var audio = new Audio("Sad_Trombone.mp3");
+        audio.play();
+    }    
 }
 
 function visibility() {
