@@ -31,12 +31,15 @@ cameraTrigger.onclick = function() {
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
 
-    // disable live view from camera after taking a photo
+    // Disable live view from camera after taking a photo
     cameraView.style.visibility = "hidden";
 
+    // Makes result visible, so the previous result isn't visible before another one is taken
     document.getElementById("result").style.visibility = "visible";
 
     picturesTook = picturesTook + 1;
+
+    // Hides 'Take a picture' button and makes 'Go Back' button visible
     cameraTrigger.style.visibility = "hidden";
     goBack.style.visibility = "visible";
 }
@@ -73,14 +76,11 @@ goBack.onclick = function() {
     goBack.style.visibility = "hidden";
 }
 
-stats.onclick = function() {
-    refreshStats();
-}
-
 function refreshStats() {
     document.querySelector(".stats").innerHTML = "Yes: " + yesCount + ", No:" + noCount;
 }
 
+// Reseting stats visible on main screen
 function resetStats() {
     yesCount = 0;
     noCount = 0;
