@@ -22,6 +22,7 @@ head, body {
 
 #button:hover {
     background-color: #3333ff;
+    cursor: pointer;
 }
 
 #yesButton {
@@ -30,6 +31,7 @@ head, body {
 
 #yesButton:hover {
     background-color: #00b300;
+    cursor: pointer;
 }
 
 #noButton {
@@ -38,6 +40,7 @@ head, body {
 
 #noButton:hover {
     background-color: #ff3333;
+    cursor: pointer;
 }
 
 #camera {
