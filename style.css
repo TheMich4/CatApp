@@ -6,7 +6,7 @@ head, body {
     background-color: yellow;
 }
 
-#but, #yesButton, #noButton {
+#button, #yesButton, #noButton {
     color: white;
     font-size: 50px;
     border-radius: 20px;
@@ -16,7 +16,7 @@ head, body {
     margin: 2px;
 }
 
-#but{
+#button {
     background-color: blue;
 }
 
@@ -75,4 +75,15 @@ head, body {
 
   #goBack {
       visibility: hidden;
+  }
+
+  .stats {
+    color: white;
+    font-size: 50px;
+    border-radius: 20px;
+    border: 0;  
+    height: 200px;
+    width: 90%;
+    margin: 2px;
+    background-color: black;
   }

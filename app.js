@@ -8,8 +8,9 @@ const   cameraView = document.querySelector("#camera--view"),
         cameraOutput = document.querySelector("#camera--output"),
         cameraSensor = document.querySelector("#camera--sensor"),
         cameraTrigger = document.querySelector("#camera--trigger"),
-        camera = document.querySelector("#camera");
-        goBack = document.querySelector("#goBack")
+        camera = document.querySelector("#camera"),
+        goBack = document.querySelector("#goBack"),
+        stats = document.querySelector(".stats")
 
 function cameraStart() {
     navigator.mediaDevices
@@ -58,7 +59,17 @@ goBack.onclick = function() {
 
     document.getElementById("camera").style.visibility = "hidden";
 
+    refreshStats();
+
     goBack.style.visibility = "hidden";
+}
+
+stats.onclick = function() {
+    refreshStats();
+}
+
+function refreshStats() {
+    document.querySelector(".stats").innerHTML = "Yes: " + yesCount + " No:" + noCount;
 }
 
 window.addEventListener("load", cameraStart, false);
