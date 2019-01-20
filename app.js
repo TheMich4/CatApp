@@ -31,6 +31,9 @@ cameraTrigger.onclick = function() {
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
 
+    // disable live view from camera after taking a photo
+    cameraView.style.visibility = "hidden";
+
     document.getElementById("result").style.visibility = "visible";
 
     picturesTook = picturesTook + 1;
@@ -42,17 +45,20 @@ function visibility() {
     document.getElementById("menu").style.visibility = "hidden";
     document.getElementById("menu").style.display = "none";
 
-    camera.style.visibility = "visible";
+    cameraView.style.visibility = "visible";
     cameraTrigger.style.visibility = "visible";
+    camera.style.visibility = "visible";
 }
 
 function yes() {
     visibility();
+    document.getElementById("answer").style.backgroundColor = "green";
     yesCount = yesCount + 1;
 }
 
 function no() {
     visibility();
+    document.getElementById("answer").style.backgroundColor = "red";
     noCount = noCount + 1;
 }
 
