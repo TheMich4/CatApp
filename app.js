@@ -31,6 +31,8 @@ cameraTrigger.onclick = function() {
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
 
+    document.getElementById("result").style.visibility = "visible";
+
     picturesTook = picturesTook + 1;
     cameraTrigger.style.visibility = "hidden";
     goBack.style.visibility = "visible";
@@ -40,7 +42,8 @@ function visibility() {
     document.getElementById("menu").style.visibility = "hidden";
     document.getElementById("menu").style.display = "none";
 
-    document.getElementById("camera").style.visibility = "visible";
+    camera.style.visibility = "visible";
+    cameraTrigger.style.visibility = "visible";
 }
 
 function yes() {
@@ -54,10 +57,10 @@ function no() {
 }
 
 goBack.onclick = function() {
+    document.getElementById("camera").style.visibility = "hidden";
     document.getElementById("menu").style.visibility = "visible";
     document.getElementById("menu").style.display = "";
-
-    document.getElementById("camera").style.visibility = "hidden";
+    document.getElementById("result").style.visibility = "hidden";
 
     refreshStats();
 
@@ -70,6 +73,12 @@ stats.onclick = function() {
 
 function refreshStats() {
     document.querySelector(".stats").innerHTML = "Yes: " + yesCount + ", No:" + noCount;
+}
+
+function resetStats() {
+    yesCount = 0;
+    noCount = 0;
+    refreshStats();
 }
 
 window.addEventListener("load", cameraStart, false);
