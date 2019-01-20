@@ -4,6 +4,8 @@ var yesCount = 0;
 var noCount = 0;
 var picturesTook = 0;
 
+var cat = true;
+
 const   cameraView = document.querySelector("#camera--view"),
         cameraOutput = document.querySelector("#camera--output"),
         cameraSensor = document.querySelector("#camera--sensor"),
@@ -42,6 +44,12 @@ cameraTrigger.onclick = function() {
     // Hides 'Take a picture' button and makes 'Go Back' button visible
     cameraTrigger.style.visibility = "hidden";
     goBack.style.visibility = "visible";
+
+    // Play sound
+    if (cat == true) {
+        var audio = new Audio("cat.mp3");
+        audio.play();
+    }
 }
 
 function visibility() {
@@ -54,12 +62,14 @@ function visibility() {
 }
 
 function yes() {
+    cat = true;
     visibility();
     document.getElementById("answer").style.backgroundColor = "green";
     yesCount = yesCount + 1;
 }
 
 function no() {
+    cat = false;
     visibility();
     document.getElementById("answer").style.backgroundColor = "red";
     noCount = noCount + 1;
