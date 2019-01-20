@@ -20,12 +20,24 @@ head, body {
     background-color: blue;
 }
 
+#button:hover {
+    background-color: #3333ff;
+}
+
 #yesButton {
     background-color: green;
 }
 
+#yesButton:hover {
+    background-color: #00b300;
+}
+
 #noButton {
     background-color: red;
+}
+
+#noButton:hover {
+    background-color: #ff3333;
 }
 
 #camera {
