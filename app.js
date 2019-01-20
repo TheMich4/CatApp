@@ -69,7 +69,7 @@ stats.onclick = function() {
 }
 
 function refreshStats() {
-    document.querySelector(".stats").innerHTML = "Yes: " + yesCount + " No:" + noCount;
+    document.querySelector(".stats").innerHTML = "Yes: " + yesCount + ", No:" + noCount;
 }
 
 window.addEventListener("load", cameraStart, false);
