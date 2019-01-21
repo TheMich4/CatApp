@@ -80,7 +80,7 @@ function no() {
     noCount = noCount + 1;
 }
 
-goBack.onclick = function() {
+function goBackToMenu() {
     document.getElementById("camera").style.visibility = "hidden";
     document.getElementById("menu").style.visibility = "visible";
     document.getElementById("menu").style.display = "";
