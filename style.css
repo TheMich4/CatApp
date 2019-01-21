@@ -6,14 +6,15 @@ head, body, #menu {
     background-color: white;
 }
 
-#button, #yesButton, #noButton {
+#button, #yesButton, #noButton, .stats {
     color: white;
     font-size: 50px;
-    border-radius: 20px;
-    border: 0;  
+    /* border-radius: 20px; */
+    border: 3;  
+    border-color: black;
+    /* margin: 2px; */
     height: 25vh;
-    width: 90vw;
-    margin: 2px;
+    width: 100vw;
 }
 
 #button {
@@ -85,13 +86,6 @@ head, body, #menu {
   }
 
   .stats {
-    color: white;
-    font-size: 50px;
-    border-radius: 20px;
-    border: 0;  
-    height: 200px;
-    width: 90%;
-    margin: 2px;
     background-color: black;
   }
 
