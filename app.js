@@ -11,7 +11,6 @@ const   cameraView = document.querySelector("#camera--view"),
         cameraSensor = document.querySelector("#camera--sensor"),
         cameraTrigger = document.querySelector("#camera--trigger"),
         camera = document.querySelector("#camera"),
-        goBack = document.querySelector("#goBack"),
         stats = document.querySelector(".stats")
 
 function cameraStart() {
@@ -24,7 +23,7 @@ function cameraStart() {
         .catch(function(error) {
             console.error("Oops. Someting is broken.", error);
         });
-        
+
         document.getElementById("result").style.visibility = "hidden";
 }
 
@@ -45,7 +44,6 @@ cameraTrigger.onclick = function() {
 
     // Hides 'Take a picture' button and makes 'Go Back' button visible
     cameraTrigger.style.visibility = "hidden";
-    goBack.style.visibility = "visible";
 
     // Play sound
     if (cat == true) {
@@ -89,8 +87,6 @@ function goBackToMenu() {
     document.getElementById("result").style.visibility = "hidden";
 
     refreshStats();
-
-    goBack.style.visibility = "hidden";
 }
 
 function refreshStats() {
