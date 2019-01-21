@@ -24,6 +24,8 @@ function cameraStart() {
         .catch(function(error) {
             console.error("Oops. Someting is broken.", error);
         });
+        
+        document.getElementById("result").style.visibility = "hidden";
 }
 
 cameraTrigger.onclick = function() {
