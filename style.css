@@ -6,13 +6,9 @@ head, body, #menu {
     background-color: white;
 }
 
-#button, #yesButton, #noButton, .stats {
+#button, .stats, #manual {
     color: white;
     font-size: 50px;
-    /* border-radius: 20px; */
-    border: 3;  
-    border-color: black;
-    /* margin: 2px; */
     height: 25vh;
     width: 100vw;
 }
@@ -26,23 +22,18 @@ head, body, #menu {
     cursor: pointer;
 }
 
-#yesButton {
-    background-color: green;
+#yesButton, #noButton {
+    background-color: white;
+    color: black;
+    font-size: 50px;
+    height: 50vh;
+    width: 49.8vw;
 }
 
-#yesButton:hover {
-    background-color: #00b300;
+#yesButton:hover, #noButton:hover {
     cursor: pointer;
 }
 
-#noButton {
-    background-color: red;
-}
-
-#noButton:hover {
-    background-color: #ff3333;
-    cursor: pointer;
-}
 
 #camera {
     visibility: hidden;
@@ -91,4 +82,8 @@ head, body, #menu {
 
   #answer {
       background-color: black;
+  }
+
+  #manual {
+      background-color: red;
   }
