@@ -24,10 +24,11 @@ head, body, #menu {
 
 #yesButton, #noButton {
     background-color: white;
-
+    display: inline;
     font-size: 50px;
     height: 50vh;
-    width: 49.8vw;
+    width: 49vw;
+
 }
 
 #yesButton:hover, #noButton:hover {
