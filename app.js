@@ -5,8 +5,14 @@ var noCount = 0;
 var picturesTook = 0;
 
 var cat = true;
-var catimage = new Image(100, 200);
+
+var catimage = new Image(100, 100);
 catimage.src = 'Cat-icon.png';
+
+var notcatimage = new Image(100, 100);
+catimage.src = 'notCat-icon.png';
+
+
 
 const   cameraView = document.querySelector("#camera--view"),
         cameraOutput = document.querySelector("#camera--output"),
@@ -93,8 +99,11 @@ function goBackToMenu() {
 
 function refreshStats() {
     var container = document.querySelector(".stats");
-    container.innerHTML = "yesCount + \" | \" + noCount";
-    container.appendChild(catimage);
+
+
+    container.innerHTML = "<img src='Cat-icon.png' height=\"64\" width=\"64\">" + yesCount + "   " + "<img src='notCat-icon.png' height=\"64\" width=\"64\">" + noCount ;
+
+    //container.appendChild(notcatimage);
 }
 
 // Reseting stats visible on main screen
