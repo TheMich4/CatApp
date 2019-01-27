@@ -8,7 +8,7 @@ head, body, #menu {
 
 #button, .stats, #manual {
     color: white;
-    font-size: 50px;
+    font-size: 100px;
     height: 25vh;
     width: 100vw;
 }
@@ -25,7 +25,7 @@ head, body, #menu {
 #yesButton, #noButton {
     background-color: white;
     display: inline;
-    font-size: 50px;
+    font-size: 80px;
     height: 25vh;
     width: 49vw;
     border: none;
@@ -50,9 +50,10 @@ head, body, #menu {
 
 #camera--trigger, #goBack {
     width: 600px;
+    height: 600px;
     background-color: black;
     color: white;
-    font-size: 60px;
+    font-size: 100px;
     border-radius: 90px;
     border: 3px white;
     padding: 15px 20px;

@@ -101,7 +101,7 @@ function refreshStats() {
     var container = document.querySelector(".stats");
 
 
-    container.innerHTML = "<img src='Cat-icon.png' height=\"64\" width=\"64\">" + yesCount + "   " + "<img src='notCat-icon.png' height=\"64\" width=\"64\">" + noCount ;
+    container.innerHTML = + noCount + "<img src='notCat-icon.png' height=\"128\" width=\"128\">" +" "+  "<img src='Cat-icon.png' height=\"128\" width=\"128\">" + yesCount;
 
     //container.appendChild(notcatimage);
 }
