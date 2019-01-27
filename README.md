@@ -7,5 +7,7 @@
 - Store statistics and permissions in a cookie ??
 - ~~Yes on Right, No on left~~
 - ~~Transparent buttons~~ 
-- ~~Manual~~ 
-- Update icons
+- ~~manual~~ 
+- ~~Update icons~~
+- UPDATE MANUAL 
+
