@@ -51,7 +51,7 @@ head, body, #menu {
 #camera--trigger, #goBack {
     width: 600px;
     height: 600px;
-    background-color: black;
+    background-color: white;
     color: white;
     font-size: 100px;
     border-radius: 90px;
