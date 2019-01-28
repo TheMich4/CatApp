@@ -9,5 +9,6 @@
 - ~~Transparent buttons~~ 
 - ~~manual~~ 
 - ~~Update icons~~
-- UPDATE MANUAL 
+- ~~UPDATE MANUAL~~
+
 
